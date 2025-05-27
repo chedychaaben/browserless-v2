@@ -18,6 +18,8 @@ COPY --from=parallel /usr/bin/parallel /usr/bin/parallel
 
 COPY --chmod=755 scripts/* ./
 
+ENV DEFAULT_CHROME_FLAGS="--proxy-server=socks5://xiaomitinyproxy.ddns.net:48284"
+
 ENTRYPOINT ["/bin/sh"]
 
 CMD ["start.sh"]
