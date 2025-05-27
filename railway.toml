@@ -12,6 +12,8 @@ restartPolicyMaxRetries = 10
 
 [env]
 DEFAULT_LAUNCH_ARGS = "--proxy-server=socks5://xiaomitinyproxy.ddns.net:48284"
+DEFAULT_CHROME_FLAGS = "--proxy-server=socks5://xiaomitinyproxy.ddns.net:48284"
+CHROME_ARGS="--proxy-server=socks5://xiaomitinyproxy.ddns.net:48284"
 BROWSER_DOMAIN_PRIVATE = "${{RAILWAY_PRIVATE_DOMAIN}}"
 PREBOOT_QUANTITY = "0"
 CONNECTION_TIMEOUT = "300000"
